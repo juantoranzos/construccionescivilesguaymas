@@ -61,7 +61,7 @@ const NavbarComponent = () => {
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img
-              src="../public/img/logo.png"
+              src="img/logo.png"
               alt="Logo"
               className="rounded img-fluid w-100" 
             />
