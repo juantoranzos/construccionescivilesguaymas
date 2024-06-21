@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import image from '../img/nieve2.jpeg'
 
 export const Elegirnos = () => {
     return (
@@ -8,7 +9,7 @@ export const Elegirnos = () => {
             <Container className="d-flex flex-column flex-md-row align-items-center justify-content-center">
                 <Col xs={12} md={6} className="p-0 shadow">
                     <img
-                        src="../public/img/nieve2.jpeg"
+                        src={image}
                         alt="Exhibition"
                         style={{ aspectRatio: '4 / 3', objectFit: 'cover' }}
                         className="w-100"
@@ -22,7 +23,7 @@ export const Elegirnos = () => {
                             Contamos con una amplia experiencia en proyectos de todo tipo y tamaño.
                         </p>
                         <div className='text-center'>
-                            <Button id='boton' variant="outline-light" className="glow-button text-white w-50 mt-2 p-3 font-bold shadow" as={Link} to="/about">
+                            <Button id='boton' variant="outline-light" className="glow-button text-white w-50  shadow" as={Link} to="/about">
                                 Acerca de Nosotros
                             </Button>
                         </div>

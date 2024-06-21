@@ -1,6 +1,9 @@
 
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import todalasmaquinas from '../img/todaslasmaquinas.jpeg'
+import livent from '../img/livent.jpeg'
+import camionetanieve from '../img/camionetanieve.jpeg'
 // Asegúrate de crear e importar un archivo CSS para estilos personalizados
 
 const CarouselComponent = () => {
@@ -10,7 +13,7 @@ const CarouselComponent = () => {
          <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../public/img/todaslasmaquinas.jpeg"
+          src={todalasmaquinas}
           alt="Third slide"
         />
         
@@ -18,7 +21,7 @@ const CarouselComponent = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../public/img/livent.jpeg"
+          src={livent}
           alt="Second slide"
         />
         
@@ -26,7 +29,7 @@ const CarouselComponent = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../public/img/camionetanieve.jpeg"
+          src={camionetanieve}
           alt="Third slide"
         />
         

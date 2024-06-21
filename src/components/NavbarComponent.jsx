@@ -45,7 +45,7 @@ const NavbarComponent = () => {
                 right: 0,
                 bottom: 0,
                 zIndex: 10,
-                backgroundColor: "white",
+                backgroundColor: "#FFFF99 ",
                 mixBlendMode: "difference"
               }}
             />

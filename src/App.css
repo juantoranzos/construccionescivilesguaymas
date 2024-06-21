@@ -165,14 +165,21 @@ width: 100%;
 
 .zoom-effect {
   overflow: hidden; /* Oculta el contenido que se sale de los límites del contenedor */
+  transition: transform 0.3s ease; /* Agrega una transición suave al efecto de zoom */
+  max-height:  470px;
 }
 
 .zoom-effect:hover img {
-  transform: scale(1.1); /* Aplica un aumento de tamaño al 10% al pasar el cursor sobre la imagen */
+  transform: scale(1.11); /* Aplica un aumento de tamaño al 10% al pasar el cursor sobre la imagen */
   transition: transform 0.3s ease; /* Agrega una transición suave al efecto de zoom */
 }
 
 #ingeniero{
   min-height:  300px;
-  min-width: 270px;
+  min-width: 320px;
+  
+}
+.zoom-effectt:hover img {
+  transform: scale(1.06); /* Aplica un aumento de tamaño al 10% al pasar el cursor sobre la imagen */
+  transition: transform 0.3s ease; /* Agrega una transición suave al efecto de zoom */
 }
