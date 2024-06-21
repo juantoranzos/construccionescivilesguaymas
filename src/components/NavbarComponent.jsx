@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { MagicTabSelect } from 'react-magic-motion';
+import logo from '../img/logo.png'
 
 const pillTabs = [
   { text: "Inicio", path: "/" },
@@ -61,7 +62,7 @@ const NavbarComponent = () => {
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img
-              src="img/logo.png"
+              src={logo}  // Ruta corregida sin "public"
               alt="Logo"
               className="rounded img-fluid w-100" 
             />

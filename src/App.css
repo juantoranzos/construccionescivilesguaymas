@@ -171,3 +171,8 @@ width: 100%;
   transform: scale(1.1); /* Aplica un aumento de tamaño al 10% al pasar el cursor sobre la imagen */
   transition: transform 0.3s ease; /* Agrega una transición suave al efecto de zoom */
 }
+
+#ingeniero{
+  min-height:  300px;
+  min-width: 270px;
+}

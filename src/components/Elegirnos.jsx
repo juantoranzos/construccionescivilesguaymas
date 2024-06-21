@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const Elegirnos = () => {
     return (
-        <div className="d-flex flex-column pt-5 min-vh-100 bg-light">
+        <div className="d-flex flex-column pt-5  bg-light">
             <Container className="d-flex flex-column flex-md-row align-items-center justify-content-center">
                 <Col xs={12} md={6} className="p-0 shadow">
                     <img

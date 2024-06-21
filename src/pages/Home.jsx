@@ -13,6 +13,7 @@ export const Home = () => {
      <Carrusel/>
      <QueNosDiferencia/>
      <Elegirnos/>
+     <h2 className='text-center display-5'>Contacto Rapido</h2>
      <Formulario></Formulario>
      <Footer/>
     </>
