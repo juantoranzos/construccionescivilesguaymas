@@ -16,7 +16,7 @@ const About = () => {
       </section>
       
       <div className='container my-5 nuestro'>
-        <h3 className='text-center' id='ceo'>Nuestro Ceo y Fundador</h3>
+        
         <h4 className='text-center display-6' id='h21'>GUAYMÁS, Luis Angel - Ingeniero Civil</h4>
         
         <section className='row my-5'>

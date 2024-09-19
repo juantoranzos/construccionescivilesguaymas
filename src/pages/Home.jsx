@@ -1,20 +1,24 @@
 import React from 'react'
 import NavbarComponent from '../components/NavbarComponent'
-import Carrusel from '../components/Carrusel'
+import Carrusel from '../components/Header'
 import { Elegirnos } from '../components/Elegirnos'
 import { QueNosDiferencia } from '../components/QueNosDiferencia'
 import { Footer } from '../components/Footer'
-import { Formulario } from '../components/Formulario'
+import { Historia } from '../components/Historia'
+import { Contacto } from '../components/Contacto'
+import Header from '../components/Header'
+import  Proyectos  from '../components/Proyectos'
 
 export const Home = () => {
   return (
     <>
      <NavbarComponent/>
-     <Carrusel/>
+     <Header/>
      <QueNosDiferencia/>
+     <Historia/>
      <Elegirnos/>
-     <h2 className='text-center display-5'>Contacto Rapido</h2>
-     <Formulario></Formulario>
+     <Proyectos/>
+     <Contacto/>
      <Footer/>
     </>
    

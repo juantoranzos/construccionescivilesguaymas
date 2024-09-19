@@ -1,82 +1,27 @@
-import React, { useState } from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import { MagicTabSelect } from 'react-magic-motion';
-import logo from '../img/logo.png'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { BsBuilding } from 'react-icons/bs'; // Asegúrate de instalar react-icons
 
-const pillTabs = [
-  { text: "Inicio", path: "/" },
-  { text: "Acerca de Nosotros", path: "/about" },
-  { text: "Servicios", path: "/services" },
-  { text: "Contáctanos", path: "/contacto" },
-];
-
-const NavbarComponent = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-
-  const tabsComponents = pillTabs.map((tab, i) => {
-    return (
-      <Nav.Link
-        key={tab.text}
-        as={Link}
-        to={tab.path}
-        onMouseEnter={() => setHoveredIndex(i)}
-        style={{
-          position: "relative",
-          padding: "0.65rem 0.75rem",
-          backgroundColor: "transparent",
-          color: "white",
-          border: 0,
-          borderRadius: "999px",
-          textDecoration: "none"
-        }}
-      >
-        {hoveredIndex === i && (
-          <MagicTabSelect
-            id="pillTabs"
-            transition={{ type: "spring", bounce: 0.35 }}
-          >
-            <span
-              style={{
-                borderRadius: "999px",
-                position: "absolute",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                zIndex: 10,
-                backgroundColor: "#FFFF99 ",
-                mixBlendMode: "difference"
-              }}
-            />
-          </MagicTabSelect>
-        )}
-        {tab.text}
-      </Nav.Link>
-    );
-  });
-
+function NavbarComponent() {
   return (
-    <header className="header">
-      <Navbar expand="lg" style={{ backgroundColor: '#043152' }}>
-        <Container>
-          <Navbar.Brand as={Link} to="/">
-            <img
-              src={logo}  // Ruta corregida sin "public"
-              alt="Logo"
-              className="rounded img-fluid w-100" 
-            />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarNav" />
-          <Navbar.Collapse id="navbarNav">
-            <Nav className="ms-auto p-3">
-              {tabsComponents}
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </header>
+    <Navbar style={{ backgroundColor: '#043055' }} className='p-5' expand="lg">
+      <Container fluid className=''>
+        <Navbar.Brand href="#" className="d-flex align-items-center text-white" >
+          <BsBuilding className="me-2 text-white fs-5" size={ 35 } /> Construcciones Civiles
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto ">
+            <Nav.Link href="#servicios" className='text-white fs-5'>Servicios</Nav.Link>
+            <Nav.Link href="#historia" className='text-white fs-5'>Historia</Nav.Link>
+            <Nav.Link href="#proyectos" className='text-white fs-5'>Proyectos</Nav.Link>
+            <Nav.Link href="#contacto" className='text-white fs-5'>Contacto</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
-};
+}
 
 export default NavbarComponent;
