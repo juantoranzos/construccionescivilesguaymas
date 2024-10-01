@@ -1,29 +1,27 @@
 import React from 'react';
-import { Fade } from 'react-awesome-reveal';
+
 
 const Header = () => {
   return (
-    <section className="w-100 py-12 md:py-24 lg:py-32 xl:py-48 bg-gray-900 p-3 text-white" style={{ backgroundColor: '#043055' }}>
-      <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center space-y-4 text-center">
-          <div className="space-y-2">
-            <Fade direction="up">
-              <h1 style={{ fontSize: '62px' }}>Líderes en Construcción para el Sector Minero.</h1>
-              <p style={{ color: 'grey', fontSize: '24px' }}>
-                Más de 18 años de experiencia y 300 proyectos exitosos en el Noroeste Argentino y zona Precordillerana.
-                <br />
-
+    <section className="py-5 py-md-6  text-white" style={{ backgroundColor: '#043055' }}>
+      <div className="container px-4 px-md-5">
+        <div className="d-flex flex-column align-items-center text-center">
+          <div className="mb-2">
+            <h1 className="display-4 display-md-3" data-aos="fade-left">Líderes en Construcción para el Sector Minero.</h1>
+            <p className=" fs-5 text-secondary" data-aos="fade-right" data-aos-delay="200">
+              Más de 18 años de experiencia y 300 proyectos exitosos en el Noroeste Argentino y zona Precordillerana.
+              <br />
               📍Santa María, Catamarca, Argentina.
-              </p>
-            </Fade>
+            </p>
           </div>
-          <div className="space-x-4">
-            <button  className="btn btn-light m-2 btn-lg ">Solicitar Presupuesto</button>
-            <button className="btn btn-light m-2 btn-lg">Nuestros Proyectos</button>
+          <div className="mt-4" data-aos="fade-up">
+            <button className="btn btn-light m-2 btn-md btn-lg-md">Solicitar Presupuesto</button>
+            <button className="btn btn-light m-2 btn-md btn-lg-md">Nuestros Proyectos</button>
           </div>
         </div>
       </div>
     </section>
+
   );
 };
 

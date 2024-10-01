@@ -5,7 +5,7 @@ import { BsBuilding } from 'react-icons/bs'; // Asegúrate de instalar react-ico
 
 function NavbarComponent() {
   return (
-    <Navbar style={{ backgroundColor: '#043055' }} className='p-5' expand="lg">
+    <Navbar style={{ backgroundColor: '#043055' }} className='' expand="lg">
       <Container fluid className=''>
         <Navbar.Brand href="#" className="d-flex align-items-center text-white" >
           <BsBuilding className="me-2 text-white fs-5" size={ 35 } /> Construcciones Civiles

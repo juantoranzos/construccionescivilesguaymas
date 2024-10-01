@@ -18,7 +18,7 @@ export const Contacto = () => {
         <Col lg={6} md={12} className="d-flex justify-content-center align-items-center">
           <div className=" p-4 shadow-lg w-100"   style={{ borderRadius: '15px', backgroundColor: '#fff' }}>
             <h2 className="text-center text-dark mb-4" style={{ fontWeight: '600' }}>Formulario de Contacto</h2>
-            <Form>
+            <Form data-aos="flip-up">
               <Form.Group className="mb-3">
                 <Form.Control type="text" placeholder="Nombre" className="shadow-sm" style={{ borderRadius: '10px' }} required />
               </Form.Group>

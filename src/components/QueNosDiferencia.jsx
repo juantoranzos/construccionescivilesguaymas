@@ -9,7 +9,7 @@ export const QueNosDiferencia = () => {
           <h2 className="display-4 font-bold p-3 m-3 ">Nuestros Servicios.</h2>
           <Row>
             <Col xs={12} md={6} lg={6}>
-              <Card className="mb-4 shadow">
+              <Card className="mb-4 shadow" data-aos="zoom-out-right">
                 <Card.Body className="flex flex-col items-center p-6 ">
                   <HardHat className=" mb-4 text-dark" size={44} />
                   <h3 className="text-lg font-bold mb-2">Construcción Minera</h3>
@@ -18,7 +18,7 @@ export const QueNosDiferencia = () => {
               </Card>
             </Col>
             <Col xs={12} md={6} lg={6}>
-              <Card className="mb-4 shadow">
+              <Card className="mb-4 shadow" data-aos="zoom-out-left">
                 <Card.Body className="flex flex-col items-center p-6">
                   <Truck className=" mb-4 text-dark" size={44} />
                   <h3 className="text-lg font-bold mb-2">Logística y Transporte</h3>
@@ -27,7 +27,7 @@ export const QueNosDiferencia = () => {
               </Card>
             </Col>
             <Col xs={12} md={6} lg={6}>
-              <Card className="mb-4 shadow">
+              <Card className="mb-4 shadow" data-aos="zoom-out-right">
                 <Card.Body className="flex flex-col items-center p-6">
                 <MountainSnow className=" mb-4 text-dark" size={44} />
                   <h3 className="text-lg font-bold mb-2">Obras de Montaña</h3>
@@ -36,7 +36,7 @@ export const QueNosDiferencia = () => {
               </Card>
             </Col>
             <Col xs={12} md={6} lg={6}>
-              <Card className="mb-4 shadow">
+              <Card className="mb-4 shadow" data-aos="zoom-out-left">
                 <Card.Body className="flex flex-col items-center p-6">
                   <Shield className=" mb-4 text-dark" size={44} />
                   <h3 className="text-lg font-bold mb-2">Seguridad y Protección</h3>
@@ -45,7 +45,7 @@ export const QueNosDiferencia = () => {
               </Card>
             </Col>
             <Col xs={12} md={6} lg={6}>
-              <Card className="mb-4 shadow">
+              <Card className="mb-4 shadow" data-aos="zoom-out-right">
                 <Card.Body className="flex flex-col items-center p-6">
                 <MonitorCog className=" mb-4 text-dark" size={44} />
                   <h3 className="text-lg font-bold mb-2">Mantenimiento de maquinas Industriales</h3>
@@ -54,7 +54,7 @@ export const QueNosDiferencia = () => {
               </Card>
             </Col>
             <Col xs={12} md={6} lg={6}>
-              <Card className="mb-4 shadow">
+              <Card className="mb-4 shadow" data-aos="zoom-out-left">
                 <Card.Body className="flex flex-col items-center p-6">
                 <Building2  className=" mb-4 text-dark" size={44} />
                   <h3 className="text-lg font-bold mb-2">Mantenimiento de Edificios</h3>
